@@ -7,12 +7,13 @@
 #navbar{
     display: flex;
     height: auto;
-    width: auto;
+    width: 100%;
     justify-content: space-between;
-    padding-top: 50px;
-    
-    position: sticky;
+    padding-top: 20px;
+    position: fixed;
     top: 0;
+   
+   
     
 
 }
@@ -28,7 +29,9 @@
     padding-top: 5px;
     height: auto;
     width: 30%;
+    
 }
+
 
 .wrap{
     width: 50px;
@@ -37,7 +40,7 @@
 .icon{
     width: 25px;
     height: 2px;
-    background: rgb(20, 14, 14);
+    background: rgb(151, 202, 231);
     margin: 6px 0px;
 
 }
@@ -45,28 +48,68 @@
 .logo{
     width: 130px;
 }
- .bigimg{
-         width: 50%;
-
+ .bigimg img{
+         width:100%;
  }
 
+
+ 
+
 #botam{
-         border: 1px solid black;
-         height: 100vh;
-         width: auto;
-         display: flex;
          
+        width: 100%;
+        height:500px;
+        
+      
+   
+
 }
-
-
-.midtitle{
-    align-items: center;
-    justify-content: center;
-    width: auto;
-    height: auto;
+#bm-mid{
+    height: 200px;
+    width:500px ;
     margin: auto;
-    font-size: 25px;
-    border: 1px solid gray;
+    margin-top: 20%;
+    
+}
+#bm-mid>p{
+   height: auto;
+   width: auto;
+   margin-left: 30%;
+   font-weight: lighter;
+   font-size: medium;
+   color: rgb(61, 55, 55);
+}
+#bm-mid>p:hover{
+    cursor: pointer;
     
 }
 
+#app{
+        height: 30px;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        margin-top:160px;
+        font-size: small;
+}
+#app>p{
+        font-size: x-small;
+        color: rgb(63, 60, 60);
+}
+#app>p:hover{
+    cursor: pointer;
+}
+#botam>#btm{
+
+    height: 50px;
+    width: 300px;
+    margin-top: 100px;
+    font-size: 8px;
+    font-weight: lighter;
+    margin-left: 80px;
+   
+}
+
+#btm>p:hover{
+    cursor: pointer;
+}
