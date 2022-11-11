@@ -15,21 +15,45 @@
                    justify-content: space-evenly;
                    align-items: center;
         }
+
+     @media all and (min-width:301px) and (max-width:600px){
+        #mens-shop{
+                         grid-template-columns: repeat(2,1fr);
+                         grid-template-rows: auto;
+        }
+
+        }
+
+     
+
+     @media all and (min-width:10px) and (max-width:300px){
+        #mens-shop{
+                         grid-template-columns: repeat(1,1fr);
+                         grid-template-rows: auto;
+        }
+     }
+
         .menpro{
             box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
            text-align: center;
         }
         .menpro>button{
             margin-bottom: 9px;
+            background-color: rgb(1, 1, 75);
+            color: white;
         }
         .dis{
             width: 100%;
         }
 
-        .menpro>button:hover{
-            cursor: pointer;
-            background-color: aquamarine;
+        
+        button:hover{
+    cursor: pointer;
+    background-color: rgb(91, 189, 247);
         }
+
+
+      
         *{
     margin: 0;
     padding: 0;
@@ -77,28 +101,37 @@
 .logo{
     width: 130px;
 }
-    </style>
+  
+
+.bg{
+    background-color: black;
+    color: brown;
+    border-radius: 50%;
+ }
+ 
+   
+   </style>
 </head>
 <body> 
-    <div id="comn">
-        <div id="main">
+         
+        
             <div id="navbar">
                <div id="navlft">
-               <div class="wrap">
-                   <a href=""><div class="icon"></div>
-                   <div class="icon"></div>
-                   <div class="icon"></div>
-               </div>
-               <img class="logo"
-               src="file:///C:/Users/pcpoint/Downloads/CLOSET.png">
-               </div>
-               <div id="navrgt">
-                <h6>SEARCH<br>__________________</h6>
-                  <a href="login.html" ><h6>LOG IN</h6></a>
-                  <a href=" "> <h6>HELP</h6></a>
-                   <a href="bag.html"> <h6>BAG</h6> </a> 
-               </div>
+                 <div class="wrap">
+                 <a href=""><div class="icon"></div>
+                 <div class="icon"></div>
+                 <div class="icon"></div>
+                    </div>
+                     <img class="logo"
+                     src="file:///C:/Users/pcpoint/Downloads/CLOSET.png">
              </div>
+               <div id="navrgt">
+                  <h6>SEARCH<br>__________________</h6>
+                  <a href="login.html" ><h6>LOG IN</h6></a>
+                  <a href="help.html"> <h6>HELP</h6></a>
+                   <a href="bag.html"> <h6 class="bg">🛒</h6> </a> 
+               </div>
+        </div>
     
     <div id="mens-shop">
 

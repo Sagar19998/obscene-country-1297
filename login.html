@@ -5,8 +5,319 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>LOG IN PAGE</title>
+
+    <style>   
+    
+    *{
+    margin: 0;
+    padding: 0;
+}
+
+
+#navbar{
+    display: flex;
+    height: auto;
+    width: auto;
+    justify-content: space-between;
+    padding-top: 7px;
+    background: white;
+    position: sticky;
+    top: 0;
+    
+
+}
+#navlft{
+    display: flex;
+    justify-content: space-around;
+    height: auto;
+    width: 20%;
+}
+#navrgt{
+    display: flex;
+    justify-content:space-around;
+    padding-top: 5px;
+    height: auto;
+    width: 30%;
+}
+
+.wrap{
+    width: 50px;
+    
+}
+.icon{
+    width: 25px;
+    height: 2px;
+    background: rgb(20, 14, 14);
+    margin: 6px 0px;
+
+}
+
+.logo{
+    width: 130px;
+}
+
+
+#cont{
+      
+         height: 300px;
+         width: 800px;
+         margin-left: 120px;
+         margin-top: 80px;
+         display: flex;
+         justify-content: space-between;
+         
+}
+
+.login{
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        height: auto;
+        width: 35%;
+        padding: 10px;
+        border-radius: 3px;
+}
+.login h6{
+
+font-family: Arial, Helvetica, sans-serif;
+color: gray;
+}
+
+.login >input ,h6:hover{
+    cursor: pointer;
+
+}
+
+.regi{
+    padding: 10px;
+    border-radius: 3px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        height: auto;
+        width: 55%;
+
+}
+.login>input{
+
+    width: 99%;
+    height: 30px;
+   
+}
+.btnip{
+    background-color: black;
+    color: white;
+
+}
+.btnip:hover{
+    background-color: rgb(90, 86, 86);
+}
+
+.regi>p{
+
+    font-size: x-small;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.regi input{
+
+    width: 60%;
+    background-color: black;
+    color: white;
+    height: 30px;
+}
+
+ .regi>p,input:hover{
+     cursor: pointer;
+     
+
+ }
+
+ 
+ .regi input:hover{
+
+     background-color: rgb(90, 86, 86);
+
+ }
+
+ #footer{
+
+    
+    height: 600px;
+    width: 100%;
+    margin-top: 20%;
+    display: flex;
+    gap: 30px;
+    
+ }
+ #footer>div{
+          
+        
+           height: 40%;
+           width: auto;
+        
+         
+
+ }
+ #footer>div>p{
+    font-size: x-small;
+    color: rgb(66, 60, 60);
+    font-family: Arial, Helvetica, sans-serif
+ }
+ .f1{
+        margin-left: 120px;
+ }
+
+ .btm12{
+           height: 300px;
+           width: 300Px;
+           margin-bottom: 30px;
+           font-size: x-small;
+           font-family:Arial, Helvetica, sans-serif ;
+           color: rgb(97, 90, 90);
+           margin-left: 120px;
+
+ }
+
+ .bg{
+    background-color: black;
+    color: brown;
+    border-radius: 50%;
+ }
+ 
+
+    </style>
 </head>
 <body>
-        <h1>CREATE YOUR ACCOUNT HERE</h1>
+          
+                   <div id="navbar">
+                      <div id="navlft">
+                      <div class="wrap">
+                    <a href=""><div class="icon"></div>
+                   <div class="icon"></div>
+                   <div class="icon"></div>
+               </div>
+                 <img class="logo"
+                   src="file:///C:/Users/pcpoint/Downloads/CLOSET.png">
+                  </div>
+                <div id="navrgt">
+                   <h6>SEARCH<br>__________________</h6>
+                   <a href="help.html"> <h6>HELP</h6></a>
+                   <a href="bag.html"> <h2 class="bg">🛒</h2> </a> 
+                </div>
+            </div>
+    
+     <div id="cont">
+              <div class="login">
+                <span class="tle">LOG IN</span><br><br><br>
+                <input  id="email"  type="text"   placeholder="E-MAIL" required>
+                <br><br><br>
+                <input   id="pwd" type="password" placeholder="PASSWORD" required>
+                <br><br><br>
+                
+                <a href="#" class="text"><h6>HAVE YOU FORGOTTEN YOUR PASSWORDS</h6></a><br><br>
+                
+                
+                    <input class="btnip" type="submit" value="LOG IN" onclick="checkData()">
+                
+                 
+
+              </div>
+
+
+              <div class="regi">
+                  <span class="t-reg">REGISTER</span>
+                  <br><br><br>
+
+                  <p class="pr1">IF YOU DON'T HAVE A CLOSET.COM ACCOUNT, USE THE OPTION TO
+                    ACCESS THE REGISTRATION FORM.
+                  </p>
+                  <br>
+                  <br>
+                  
+                  
+                  <p class="pr2">
+                    BY GIVING US YOUR DETAILS, PURCHASING IN CLOSET.COM WILL BE FASTER
+                    AND AN ENJOYABLE EXPRERIENCE.
+                  </p>
+                  <br><br><br><br><br><br>
+
+                 <a href="acc-cre.html" ><input type="button" value="CREATE ACCOUNT"></a>
+
+
+              </div>
+
+
+             
+
+
+     </div>
+      
+     <div id="footer">
+           
+        <div class="f1">
+            
+           <h5> HELP</h5><br><br>
+           <p> SHOP AT ZARA.COM</p><br>
+            <p>PRODUCT</p><br>
+           <p> GIFT CARD</p><br>
+            <p>PAYMENT</p><br>
+           <p> SHIPPING</p><br>
+            <p>EXCHANGES AND RETURNS</p><br>
+           <p> SHOPS AND COMPANY</p><br>
+           <p> CLOTHES COLLECTION PROGRAMME</p><br>
+           <p> MY ACCOUNT</p>
+
+
+        </div>
+        <div class="f2">
+
+            <h5>FOLLOW US</h5><br><br>
+            <p>NEWSLETTER</p><br>
+            <p>INSTAGRAM</p><br>
+            <p>FACEBOOK</p><br>
+            <p>TWITTER</p><br>
+            <p>PINTEREST</p><br>
+           <p> YOUTUBE </p><br>   
+
+
+        </div>
+
+        <div class="f3">
+
+            <h5>COMPANY</h5><br><br>
+           <p> ABOUT US</p><br>
+            <p>JOIN LIFE</p><br>
+            <p>OFFICES</p><br>
+            <p>STORES</p><br>
+            <p>WORK WITH US</p>
+
+        </div>
+
+        <div class="f4">
+
+
+           <h5> POLICIES</h5><br><br>
+           <p> PRIVACY POLICY</p><br>
+           <p> PURCHASE CONDITIONS</p><br>
+           <p>GIFT CARD CONDITIONS</p><br>
+           <p>COOKIES SETTINGS</p>
+
+        </div>
+
+       
+
+
+    </div>
+     
+    <div class="btm12">
+        <p>INDIA</p><br><br><br><br><br>
+        <p>
+            NAME AND ADDRESS OF THE MANUFACTURER.
+            INDUSTRIA DE DISENO TEXTIL, S.A(INDITEX .S.A)
+            AVENIDA DE LA DIPUTACION. EDIFICIO INDITEX, 15143,ARTEIXO(A CORUNA),SPAIN
+        </p>
+    </div>
 </body>
 </html>
+
+
+
+  
+
+ <script src="closet.js"></script>

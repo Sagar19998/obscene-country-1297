@@ -113,3 +113,12 @@
 #btm>p:hover{
     cursor: pointer;
 }
+
+
+
+.bg{
+    background-color: black;
+    color: brown;
+    border-radius: 50%;
+ }
+ 

@@ -5,135 +5,175 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FOOTWARE</title>
+    <style>
+
+       
+#foots{
+            display: grid;
+                    gap: 20px;
+                    grid-template-columns:repeat(4,1fr);
+                    grid-template-rows:auto ;
+                   justify-content: space-evenly;
+                   align-items: center;
+        }
+        .shoes{
+            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+           text-align: center;
+        }
+        .shoes>button{
+            margin-bottom: 9px;
+            background-color: rgb(1, 1, 75);
+            color: white;
+        }
+        .allfoot{
+            width: 100%;
+        }
+
+        button:hover{
+    cursor: pointer;
+    background-color: rgb(91, 189, 247);
+        }
+
+
+
+
+
+
+
+        
+        *{
+    margin: 0;
+    padding: 0;
+}
+
+
+#navbar{
+    display: flex;
+    height: auto;
+    width: auto;
+    justify-content: space-between;
+    padding-top: 50px;
+    
+    position: sticky;
+    top: 0;
+    
+
+}
+#navlft{
+    display: flex;
+    justify-content: space-around;
+    height: auto;
+    width: 20%;
+}
+#navrgt{
+    display: flex;
+    justify-content:space-around;
+    padding-top: 5px;
+    height: auto;
+    width: 30%;
+}
+
+.wrap{
+    width: 50px;
+    
+}
+.icon{
+    width: 25px;
+    height: 2px;
+    background: rgb(20, 14, 14);
+    margin: 6px 0px;
+
+}
+
+.logo{
+    width: 130px;
+}
+
+
+.bg{
+    background-color: black;
+    color: brown;
+    border-radius: 50%;
+ }
+ 
+
+
+@media all and (min-width:301px) and (max-width:600px){
+        #foots{
+                         grid-template-columns: repeat(2,1fr);
+                         grid-template-rows: auto;
+        }
+
+        }
+
+     
+
+     @media all and (min-width:10px) and (max-width:300px){
+        #foots{
+                         grid-template-columns: repeat(1,1fr);
+                         grid-template-rows: auto;
+        }
+     }
+
+
+    </style>
 </head>
 <body>
+
+
+               
+    
+            <div id="navbar">
+               <div id="navlft">
+               <div class="wrap">
+                   <a href=""><div class="icon"></div>
+                   <div class="icon"></div>
+                   <div class="icon"></div>
+               </div>
+               <img class="logo"
+               src="file:///C:/Users/pcpoint/Downloads/CLOSET.png">
+               </div>
+               <div id="navrgt">
+                <h6>SEARCH<br>__________________</h6>
+                  <a href="login.html" ><h6>LOG IN</h6></a>
+                  <a href="help.html"> <h6>HELP</h6></a>
+                   <a href="bag.html"> <h6 class="bg">🛒</h6> </a> 
+               </div>
+             </div>
+
+
+
+
+
+
+
+
+
       <div id="foots">
 
 
         
         <div class="shoes">
-            <img class="allfoot" src=" ">
+            <img class="allfoot" src="https://static.zara.net/photos///2022/I/1/1/p/3307/010/040/2/w/563/3307010040_6_1_1.jpg?ts=1659520627362 ">
             <p clsss="pri">1350 Rs</p>
+            <p>women</p>
             <button>ADD TO BAG</button>
         </div>
 
           
         <div class="shoes">
-            <img class="allfoot" src=" ">
+            <img class="allfoot" src="https://static.zara.net/photos///2022/I/1/1/p/3343/010/040/2/w/563/3343010040_6_1_1.jpg?ts=1658929604332 ">
             <p clsss="pri">1350 Rs</p>
-            <button>ADD TO BAG</button>
-        </div>
-
-
-          
-        <div class="shoes">
-            <img class="allfoot" src=" ">
-            <p clsss="pri">1350 Rs</p>
-            <button>ADD TO BAG</button>
-        </div>
-
-
-
-          
-        <div class="shoes">
-            <img class="allfoot" src=" ">
-            <p clsss="pri">1350 Rs</p>
+            <p>women</p>
             <button>ADD TO BAG</button>
         </div>
 
 
           
         <div class="shoes">
-            <img class="allfoot" src=" ">
+            <img class="allfoot" src="https://static.zara.net/photos///2022/I/1/1/p/2120/010/800/2/w/563/2120010800_6_1_1.jpg?ts=1665150499930 ">
             <p clsss="pri">1350 Rs</p>
-            <button>ADD TO BAG</button>
-        </div>
-
-
-          
-        <div class="shoes">
-            <img class="allfoot" src=" ">
-            <p clsss="pri">1350 Rs</p>
-            <button>ADD TO BAG</button>
-        </div>
-
-
-          
-        <div class="shoes">
-            <img class="allfoot" src=" ">
-            <p clsss="pri">1350 Rs</p>
-            <button>ADD TO BAG</button>
-        </div>
-
-
-          
-        <div class="shoes">
-            <img class="allfoot" src=" ">
-            <p clsss="pri">1350 Rs</p>
-            <button>ADD TO BAG</button>
-        </div>
-
-
-          
-        <div class="shoes">
-            <img class="allfoot" src=" ">
-            <p clsss="pri">1350 Rs</p>
-            <button>ADD TO BAG</button>
-        </div>
-
-
-          
-        <div class="shoes">
-            <img class="allfoot" src=" ">
-            <p clsss="pri">1350 Rs</p>
-            <button>ADD TO BAG</button>
-        </div>
-
-
-          
-        <div class="shoes">
-            <img class="allfoot" src=" ">
-            <p clsss="pri">1350 Rs</p>
-            <button>ADD TO BAG</button>
-        </div>
-
-
-          
-        <div class="shoes">
-            <img class="allfoot" src=" ">
-            <p clsss="pri">1350 Rs</p>
-            <button>ADD TO BAG</button>
-        </div>
-
-
-          
-        <div class="shoes">
-            <img class="allfoot" src=" ">
-            <p clsss="pri">1350 Rs</p>
-            <button>ADD TO BAG</button>
-        </div>
-
-
-          
-        <div class="shoes">
-            <img class="allfoot" src=" ">
-            <p clsss="pri">1350 Rs</p>
-            <button>ADD TO BAG</button>
-        </div>
-
-
-          
-        <div class="shoes">
-            <img class="allfoot" src=" ">
-            <p clsss="pri">1350 Rs</p>
-            <button>ADD TO BAG</button>
-        </div>
-
-
-          
-        <div class="shoes">
-            <img class="allfoot" src=" ">
-            <p clsss="pri">1350 Rs</p>
+            <p>women</p>
             <button>ADD TO BAG</button>
         </div>
 
@@ -141,8 +181,117 @@
 
           
         <div class="shoes">
-            <img class="allfoot" src=" ">
+            <img class="allfoot" src="https://static.zara.net/photos///2022/I/1/1/p/1252/010/600/2/w/563/1252010600_6_5_1.jpg?ts=1665507408479 ">
             <p clsss="pri">1350 Rs</p>
+            <p>women</p>
+            <button>ADD TO BAG</button>
+        </div>
+
+
+          
+        <div class="shoes">
+            <img class="allfoot" src="https://static.zara.net/photos///2022/I/1/1/p/1257/010/808/2/w/563/1257010808_6_1_1.jpg?ts=1667406846038 ">
+            <p clsss="pri">1350 Rs</p>
+            <p>women</p>
+            <button>ADD TO BAG</button>
+        </div>
+
+
+          
+        <div class="shoes">
+            <img class="allfoot" src=" https://static.zara.net/photos///2022/I/1/2/p/2226/020/719/2/w/563/2226020719_6_5_1.jpg?ts=1664527505113">
+            <p clsss="pri">1350 Rs</p>
+            <p>men</p>
+            <button>ADD TO BAG</button>
+        </div>
+
+
+          
+        <div class="shoes">
+            <img class="allfoot" src="https://static.zara.net/photos///2022/I/1/2/p/2401/022/105/2/w/563/2401022105_6_2_1.jpg?ts=1660728611742 ">
+            <p clsss="pri">1350 Rs</p>
+            <p>men</p>
+            <button>ADD TO BAG</button>
+        </div>
+
+
+          
+        <div class="shoes">
+            <img class="allfoot" src=" https://static.zara.net/photos///2022/I/1/2/p/2500/920/010/2/w/563/2500920010_6_2_1.jpg?ts=1660728594857">
+            <p clsss="pri">1350 Rs</p>
+            <p>men</p>
+            <button>ADD TO BAG</button>
+        </div>
+
+
+          
+        <div class="shoes">
+            <img class="allfoot" src="https://static.zara.net/photos///2022/I/1/1/p/1219/010/060/2/w/563/1219010060_6_2_1.jpg?ts=1659078867372 ">
+            <p clsss="pri">1350 Rs</p>
+            <p>women</p>
+            <button>ADD TO BAG</button>
+        </div>
+
+
+          
+        <div class="shoes">
+            <img class="allfoot" src=" https://static.zara.net/photos///2022/I/1/2/p/2426/920/105/2/w/563/2426920105_6_2_1.jpg?ts=1661241652897">
+            <p clsss="pri">1350 Rs</p>
+            <p>men</p>
+            <button>ADD TO BAG</button>
+        </div>
+
+
+          
+        <div class="shoes">
+            <img class="allfoot" src="https://static.zara.net/photos///2022/I/1/2/p/2018/020/102/2/w/563/2018020102_6_3_1.jpg?ts=1660728638493 ">
+            <p clsss="pri">1350 Rs</p>
+            <p>men</p>
+            <button>ADD TO BAG</button>
+        </div>
+
+
+          
+        <div class="shoes">
+            <img class="allfoot" src="https://static.zara.net/photos///2022/V/1/3/p/2702/930/050/2/w/563/2702930050_6_1_1.jpg?ts=1643646373478 ">
+            <p clsss="pri">1350 Rs</p>
+            <p>girl</p>
+            <button>ADD TO BAG</button>
+        </div>
+
+
+          
+        <div class="shoes">
+            <img class="allfoot" src=" https://static.zara.net/photos///2022/I/1/3/p/6531/030/800/4/w/563/6531030800_1_1_1.jpg?ts=1667922990271">
+            <p clsss="pri">1350 Rs</p>
+            <p>boy</p>
+            <button>ADD TO BAG</button>
+        </div>
+
+
+          
+        <div class="shoes">
+            <img class="allfoot" src="https://static.zara.net/photos///2022/I/1/3/p/6545/030/105/2/w/563/6545030105_6_1_1.jpg?ts=1661764809713 ">
+            <p clsss="pri">1350 Rs</p>
+            <p>boy</p>
+            <button>ADD TO BAG</button>
+        </div>
+
+
+          
+        <div class="shoes">
+            <img class="allfoot" src="https://static.zara.net/photos///2022/I/1/3/p/2608/030/050/2/w/563/2608030050_6_1_1.jpg?ts=1662968521695 ">
+            <p clsss="pri">1350 Rs</p>
+            <p>girl</p>
+            <button>ADD TO BAG</button>
+        </div>
+
+
+          
+        <div class="shoes">
+            <img class="allfoot" src="https://static.zara.net/photos///2022/I/1/3/p/6529/030/022/2/w/563/6529030022_6_1_1.jpg?ts=1662456164548 ">
+            <p clsss="pri">1350 Rs</p>
+            <p>boy</p>
             <button>ADD TO BAG</button>
         </div>
 
@@ -150,48 +299,65 @@
 
           
         <div class="shoes">
-            <img class="allfoot" src=" ">
+            <img class="allfoot" src="https://static.zara.net/photos///2022/I/1/3/p/2608/030/050/2/w/563/2608030050_6_1_1.jpg?ts=1662968521695 ">
             <p clsss="pri">1350 Rs</p>
+            <p>girl</p>
+            <button>ADD TO BAG</button>
+        </div>
+
+
+
+          
+        <div class="shoes">
+            <img class="allfoot" src=" https://static.zara.net/photos///2022/I/1/3/p/6103/030/107/2/w/563/6103030107_6_4_1.jpg?ts=1658837804611">
+            <p clsss="pri">1350 Rs</p>
+            <p>boy</p>
             <button>ADD TO BAG</button>
         </div>
 
 
           
         <div class="shoes">
-            <img class="allfoot" src=" ">
+            <img class="allfoot" src="https://static.zara.net/photos///2022/I/1/3/p/2700/030/102/2/w/563/2700030102_6_4_1.jpg?ts=1661189223132 ">
             <p clsss="pri">1350 Rs</p>
+            <p>girl</p>
             <button>ADD TO BAG</button>
         </div>
 
 
           
         <div class="shoes">
-            <img class="allfoot" src=" ">
+            <img class="allfoot" src="https://static.zara.net/photos///2022/I/1/3/p/4747/030/802/2/w/563/4747030802_6_2_1.jpg?ts=1665131659694 ">
             <p clsss="pri">1350 Rs</p>
+            <p>girl</p>
             <button>ADD TO BAG</button>
         </div>
 
 
           
         <div class="shoes">
-            <img class="allfoot" src=" ">
+            <img class="allfoot" src="https://static.zara.net/photos///2022/I/1/3/p/6331/030/002/2/w/563/6331030002_6_4_1.jpg?ts=1660287793209">
             <p clsss="pri">1350 Rs</p>
+            <p>boy</p>
             <button>ADD TO BAG</button>
         </div>
      
 
           
         <div class="shoes">
-            <img class="allfoot" src=" ">
+            
+            <img class="allfoot" src="https://static.zara.net/photos///2022/I/1/3/p/6527/030/002/2/w/563/6527030002_6_4_1.jpg?ts=1659351148289 ">
             <p clsss="pri">1350 Rs</p>
+            <p>girl</p>
             <button>ADD TO BAG</button>
         </div>
 
 
           
         <div class="shoes">
-            <img class="allfoot" src=" ">
+            <img class="allfoot" src=" https://static.zara.net/photos///2022/I/1/3/p/2513/030/050/2/w/563/2513030050_6_2_1.jpg?ts=1659429259974">
             <p clsss="pri">1350 Rs</p>
+            <p>girl</p>
             <button>ADD TO BAG</button>
         </div>
 
