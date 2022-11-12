@@ -13,25 +13,26 @@
 }
 
 
-#navbar{
+#navbar3{
     display: flex;
+    
     height: auto;
     width: auto;
     justify-content: space-between;
-    padding-top: 50px;
+    padding-top: 10px;
     background: white;
     position: sticky;
     top: 0;
     
 
 }
-#navlft{
+#navlft3{
     display: flex;
     justify-content: space-around;
     height: auto;
     width: 20%;
 }
-#navrgt{
+#navrgt3{
     display: flex;
     justify-content:space-around;
     padding-top: 5px;
@@ -39,11 +40,11 @@
     width: 30%;
 }
 
-.wrap{
+.wrap3{
     width: 50px;
     
 }
-.icon{
+.icon3{
     width: 25px;
     height: 2px;
     background: rgb(20, 14, 14);
@@ -51,7 +52,7 @@
 
 }
 
-.logo{
+.logo3{
     width: 130px;
 }
 
@@ -177,21 +178,20 @@ color: gray;
     </style>
 </head>
 <body>
-          <div id="comn">
-                <div id="main">
-                   <div id="navbar">
-                      <div id="navlft">
-                      <div class="wrap">
-                    <a href=""><div class="icon"></div>
-                   <div class="icon"></div>
-                   <div class="icon"></div>
+          
+                   <div id="navbar3">
+                      <div id="navlft3">
+                      <div class="wrap3">
+                    <a href=""><div class="icon3"></div>
+                   <div class="icon3"></div>
+                   <div class="icon3"></div>
                </div>
-                 <img class="logo"
+                 <img class="logo3"
                    src="file:///C:/Users/pcpoint/Downloads/CLOSET.png">
                   </div>
-                <div id="navrgt">
+                <div id="navrgt3">
                    <h6>SEARCH<br>__________________</h6>
-                   <a href=" "> <h6>HELP</h6></a>
+                   <a href="help.html"> <h6>HELP</h6></a>
                    <a href="bag.html"> <h2>🛒</h2> </a> 
                 </div>
             </div>
@@ -199,15 +199,15 @@ color: gray;
      <div id="cont">
               <div class="login">
                 <span class="tle">LOG IN</span><br><br><br>
-                <input type="text"   placeholder="E-MAIL" required>
+                <input id="email" type="text"   placeholder="E-MAIL" required>
                 <br><br><br>
-                <input type="password" placeholder="PASSWORD" required>
+                <input id="pwd" type="password" placeholder="PASSWORD" required>
                 <br><br><br>
                 
                 <a href="#" class="text"><h6>HAVE YOU FORGOTTEN YOUR PASSWORDS</h6></a><br><br>
                 
                 
-                    <input class="btnip" type="button" value="LOG IN">
+                    <input class="btnip" type="button" value="LOG IN" onclick="checkData()">
                 
                  
 
@@ -231,7 +231,7 @@ color: gray;
                   </p>
                   <br><br><br><br><br><br>
 
-                 <a href="create-acc.html" ><input type="button" value="CREATE ACCOUNT"></a>
+                 <a href="acc-cre.html" ><input type="button" value="CREATE ACCOUNT"></a>
 
 
               </div>
@@ -309,3 +309,5 @@ color: gray;
     </div>
 </body>
 </html>
+
+<script src="closet.js"></script>
