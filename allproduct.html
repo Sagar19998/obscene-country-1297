@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ALL IN ONE</title>
+
+
+    <style>
+
+
+#main{
+                    display: grid;
+                    gap: 20px;
+                    grid-template-columns:repeat(4,1fr);
+                    grid-template-rows:auto ;
+                   justify-content: space-evenly;
+                   align-items: center;
+                   margin-top: 10px;
+        }
+        #main>div{
+            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+           text-align: center;
+        }
+        #main>div>button{
+            margin-bottom: 9px;
+        }
+        #main>div>img{
+            width: 100%;
+        }
+
+
+        #main>div>button:hover{
+
+            background-color: brown;
+            cursor: pointer;
+        }
+
+
+        
+.bg02{
+    background-color: black;
+    color: brown;
+    border-radius: 50%;
+    }
+    
+
+        
+@media all and (min-width:301px) and (max-width:600px){
+    #main{
+                     grid-template-columns: repeat(2,1fr);
+                     grid-template-rows: auto;
+    }
+
+    }
+
+
+
+ @media all and (min-width:10px) and (max-width:300px){
+    #main{
+                     grid-template-columns: repeat(1,1fr);
+                     grid-template-rows: auto;
+    }
+ }
+
+
+
+
+
+
+
+
+
+           *{
+    margin: 0;
+    padding: 0;
+}
+
+
+#navbar01{
+    display: flex;
+    height: auto;
+    width: auto;
+    justify-content: space-between;
+    padding-top: 50px;
+    
+    position: sticky;
+    top: 0;
+    
+
+}
+#navlft01{
+    display: flex;
+    justify-content: space-around;
+    height: auto;
+    width: 20%;
+}
+#navrgt01{
+    display: flex;
+    justify-content:space-around;
+    padding-top: 5px;
+    height: auto;
+    width: 30%;
+}
+
+.wrap01{
+    width: 50px;
+    
+}
+.icon01{
+    width: 25px;
+    height: 2px;
+    background: rgb(20, 14, 14);
+    margin: 6px 0px;
+
+}
+
+.logo01{
+    width: 130px;
+}
+
+
+#ser{
+
+    text-decoration-style: none;
+    direction: none;
+}
+
+    </style>
+</head>
+<body>
+    
+     
+    <div id="navbar01">
+        <div id="navlft01">
+        <div class="wrap01">
+            <a href=""><div class="icon01"></div>
+            <div class="icon01"></div>
+            <div class="icon01"></div>
+        </div>
+        <img class="logo01"
+        src="file:///C:/Users/pcpoint/Downloads/CLOSET.png">
+        </div>
+        <div id="navrgt01">
+
+         <input id="ser" oninput="search()" type="text" placeholder="SEARCH"/>
+
+           <a href="login.html" ><h6>LOG IN</h6></a>
+           <a href="help.html"> <h6>HELP</h6></a>
+            <a href="bag.html"> <h2 class="bg02"> 🛒</h2> </a> 
+        </div>
+      </div>
+
+
+
+      <div id="main">
+
+      </div>
+
+
+
+</body>
+</html>
+<script>
+
+
+let cartItems=JSON.parse(localStorage.getItem("cartProduct"))||[];
+    
+    let url="https://fakestoreapi.com/products"
+     fetch(url)
+     .then((res)=>res.json())
+     .then((data)=>{
+
+     bag=data;
+     console.log(data);
+     displayCard(data);
+     });
+
+   
+     function search(){
+        let q =document.querySelector("input").value;
+        console.log(q);
+
+        let newData=bag.filter(function (elem){
+           
+            return elem.title.toLowerCase().includes(q.toLowerCase())
+        });
+        displayCard(newData);
+        
+
+     }
+
+     function displayCard(data){
+         
+    //to get new arr as search input so initilly we have to make main empty
+    document.querySelector("#main").innerHTML="";
+
+        data.forEach(elem => {
+
+            let div=document.createElement("div");
+
+            let imgprod=document.createElement("img");
+              imgprod.setAttribute("src",elem.image);
+              
+            let title=document.createElement("h4");
+             title.innerText=elem.title;
+
+           
+
+            let cost=document.createElement("p");
+              cost.innerText=elem.price;
+
+           
+
+            let btn=document.createElement("button");
+              btn.innerText="ADD To Cart"
+              //to do add cart local storage
+              btn.addEventListener("click",function(){
+                cartItems.push(elem);
+                localStorage.setItem("cartProduct",JSON.stringify(cartItems))
+              })
+
+        div.append(imgprod,title,cost,btn);
+
+        document.querySelector("#main").append(div);
+            
+        });
+     }
+
+
+</script>

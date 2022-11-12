@@ -30,13 +30,38 @@
             cursor: pointer;
             background-color: aquamarine;
         }
+
+
+        
+@media all and (min-width:301px) and (max-width:600px){
+    #mens-shop{
+                     grid-template-columns: repeat(2,1fr);
+                     grid-template-rows: auto;
+    }
+
+    }
+
+
+
+ @media all and (min-width:10px) and (max-width:300px){
+    #mens-shop{
+                     grid-template-columns: repeat(1,1fr);
+                     grid-template-rows: auto;
+    }
+ }
+
+
+
+
+
+
         *{
     margin: 0;
     padding: 0;
 }
 
 
-#navbar{
+#navbar2{
     display: flex;
     height: auto;
     width: auto;
@@ -48,13 +73,13 @@
     
 
 }
-#navlft{
+#navlft2{
     display: flex;
     justify-content: space-around;
     height: auto;
     width: 20%;
 }
-#navrgt{
+#navrgt2{
     display: flex;
     justify-content:space-around;
     padding-top: 5px;
@@ -62,11 +87,11 @@
     width: 30%;
 }
 
-.wrap{
+.wrap2{
     width: 50px;
     
 }
-.icon{
+.icon2{
     width: 25px;
     height: 2px;
     background: rgb(20, 14, 14);
@@ -74,28 +99,27 @@
 
 }
 
-.logo{
+.logo2{
     width: 130px;
 }
     </style>
 </head>
 <body> 
-    <div id="comn">
-        <div id="main">
-            <div id="navbar">
-               <div id="navlft">
-               <div class="wrap">
-                   <a href=""><div class="icon"></div>
-                   <div class="icon"></div>
-                   <div class="icon"></div>
+    
+            <div id="navbar2">
+               <div id="navlft2">
+               <div class="wrap2">
+                   <a href=""><div class="icon2"></div>
+                   <div class="icon2"></div>
+                   <div class="icon2"></div>
                </div>
-               <img class="logo"
+               <img class="logo2"
                src="file:///C:/Users/pcpoint/Downloads/CLOSET.png">
                </div>
-               <div id="navrgt">
+               <div id="navrgt2">
                 <h6>SEARCH<br>__________________</h6>
                   <a href="login.html" ><h6>LOG IN</h6></a>
-                  <a href=" "> <h6>HELP</h6></a>
+                  <a href="help.html"> <h6>HELP</h6></a>
                    <a href="bag.html"> <h2> 🛒</h2> </a> 
                </div>
              </div>
