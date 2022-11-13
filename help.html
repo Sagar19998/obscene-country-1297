@@ -84,16 +84,56 @@
 
 
 
+@media all and (min-width:400px)and (max-width:600px){
+
+#helplogo{
+    grid-template-columns: repeat(3,1fr);
+     grid-template-rows: auto; 
+}
+}
+
+
+
+
+
+
+
 #footer{
 
     
-height: 600px;
-width: 100%;
+height: 550px;
+width: 50%;
 margin-top: 10%;
-display: flex;
-gap: 30px;
+display: grid;
+grid-template-columns: repeat(4,1fr);
+grid-template-rows: auto;
+margin-left: 120px;
+
 
 }
+
+@media all and (min-width:400px)and (max-width:600px){
+
+    #footer{
+        grid-template-columns: repeat(2,1fr);
+         grid-template-rows: auto; 
+    }
+}
+
+@media all and (min-width:70px)and (max-width:399px){
+
+#footer{
+    grid-template-columns: repeat(1,1fr);
+     grid-template-rows: auto; 
+     height: 1000px;
+}
+}
+
+
+
+
+
+
 #footer>div{
       
     
@@ -108,9 +148,7 @@ font-size: x-small;
 color: rgb(66, 60, 60);
 font-family: Arial, Helvetica, sans-serif
 }
-.f1{
-    margin-left: 120px;
-}
+
 
 .btm12{
        height: 300px;
@@ -119,10 +157,18 @@ font-family: Arial, Helvetica, sans-serif
        font-size: x-small;
        font-family:Arial, Helvetica, sans-serif ;
        color: rgb(97, 90, 90);
-       margin-left: 120px;
+      
+      
 
 }
 
+
+@media all and (min-width:70px)and (max-width:399px){
+
+#btm12{
+       
+}
+}
         
 </style>
         
@@ -232,14 +278,14 @@ font-family: Arial, Helvetica, sans-serif
         <div class="f1">
             
            <h5> HELP</h5><br><br>
-           <p> SHOP AT ZARA.COM</p><br>
-            <p>PRODUCT</p><br>
-           <p> GIFT CARD</p><br>
-            <p>PAYMENT</p><br>
-           <p> SHIPPING</p><br>
-            <p>EXCHANGES AND RETURNS</p><br>
-           <p> SHOPS AND COMPANY</p><br>
-           <p> CLOTHES COLLECTION PROGRAMME</p><br>
+           <p> SHOP AT ZARA.COM</p>
+            <p>PRODUCT</p>
+           <p> GIFT CARD</p>
+            <p>PAYMENT</p>
+           <p> SHIPPING</p>
+            <p>EXCHANGES AND RETURNS</p>
+           <p> SHOPS AND COMPANY</p>
+           <p> CLOTHES COLLECTION PROGRAMME</p>
            <p> MY ACCOUNT</p>
 
 
@@ -247,12 +293,12 @@ font-family: Arial, Helvetica, sans-serif
         <div class="f2">
 
             <h5>FOLLOW US</h5><br><br>
-            <p>NEWSLETTER</p><br>
-            <p>INSTAGRAM</p><br>
-            <p>FACEBOOK</p><br>
-            <p>TWITTER</p><br>
-            <p>PINTEREST</p><br>
-           <p> YOUTUBE </p><br>   
+            <p>NEWSLETTER</p>
+            <p>INSTAGRAM</p>
+            <p>FACEBOOK</p>
+            <p>TWITTER</p>
+            <p>PINTEREST</p>
+           <p> YOUTUBE </p>  
 
 
         </div>
@@ -260,10 +306,10 @@ font-family: Arial, Helvetica, sans-serif
         <div class="f3">
 
             <h5>COMPANY</h5><br><br>
-           <p> ABOUT US</p><br>
-            <p>JOIN LIFE</p><br>
-            <p>OFFICES</p><br>
-            <p>STORES</p><br>
+           <p> ABOUT US</p>
+            <p>JOIN LIFE</p>
+            <p>OFFICES</p>
+            <p>STORES</p>
             <p>WORK WITH US</p>
 
         </div>
@@ -272,9 +318,9 @@ font-family: Arial, Helvetica, sans-serif
 
 
            <h5> POLICIES</h5><br><br>
-           <p> PRIVACY POLICY</p><br>
-           <p> PURCHASE CONDITIONS</p><br>
-           <p>GIFT CARD CONDITIONS</p><br>
+           <p> PRIVACY POLICY</p>
+           <p> PURCHASE CONDITIONS</p>
+           <p>GIFT CARD CONDITIONS</p>
            <p>COOKIES SETTINGS</p>
 
         </div>
