@@ -16,6 +16,8 @@ function addData(){
     localStorage.setItem("userpwd",pass);
     localStorage.setItem("usernumber",number);
     
+
+    window.location.assign("login.html");
     alert("REGISTRATION SUCCESSFULL")
     
     }
