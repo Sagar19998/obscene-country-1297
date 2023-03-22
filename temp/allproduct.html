@@ -15,13 +15,17 @@
                     gap: 20px;
                     grid-template-columns:repeat(4,1fr);
                     grid-template-rows:auto ;
-                   justify-content: space-evenly;
+                   justify-content: space-around;
                    align-items: center;
                    margin-top: 10px;
+                   margin-left: 90px;
+                   
         }
         #main>div{
             box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
            text-align: center;
+           width: 50%;
+           height: auto;
         }
         #main>div>button{
             margin-bottom: 9px;
@@ -72,7 +76,7 @@
 
 
 
-           *{
+       *{
     margin: 0;
     padding: 0;
 }
@@ -83,7 +87,7 @@
     height: auto;
     width: auto;
     justify-content: space-between;
-    padding-top: 50px;
+    padding-top: 30px;
     
     position: sticky;
     top: 0;
@@ -121,10 +125,19 @@
 }
 
 
-#ser{
+.ser{
 
-    text-decoration-style: none;
-    direction: none;
+    border: none;
+    height: 20px;
+    width: 90px;
+    
+    
+} 
+
+a{
+    text-decoration: none;
+    color: black;
+    margin-top: 3px;
 }
 
     </style>
@@ -144,13 +157,17 @@
         </div>
         <div id="navrgt01">
 
-         <input id="ser" oninput="search()" type="text" placeholder="SEARCH"/>
-
-           <a href="login.html" ><h6>LOG IN</h6></a>
+             
+             
+            <a href="login.html" ><h6>LOG IN</h6></a>
            <a href="help.html"> <h6>HELP</h6></a>
+           <input class="ser" oninput="search()" type="text" placeholder="Search products"/>
             <a href="bag.html"> <h2 class="bg02"> 🛒</h2> </a> 
+           
         </div>
+        
       </div>
+      
 
 
 
@@ -179,16 +196,13 @@ let cartItems=JSON.parse(localStorage.getItem("cartProduct"))||[];
 
    
      function search(){
-        let q =document.querySelector("input").value;
-        console.log(q);
-
-        let newData=bag.filter(function (elem){
-           
-            return elem.title.toLowerCase().includes(q.toLowerCase())
+        let type=document.querySelector("input").value;
+        console.log(type);
+        let newdata = bag.filter(function (elem) {
+            return elem.title.toLowerCase().includes(type.toLowerCase());
+    
         });
-        displayCard(newData);
-        
-
+        displayCard(newdata);
      }
 
      function displayCard(data){
@@ -219,6 +233,8 @@ let cartItems=JSON.parse(localStorage.getItem("cartProduct"))||[];
               btn.addEventListener("click",function(){
                 cartItems.push(elem);
                 localStorage.setItem("cartProduct",JSON.stringify(cartItems))
+                alert(" Product Added");
+                window.location.assign("bag.html");
               })
 
         div.append(imgprod,title,cost,btn);

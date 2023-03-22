@@ -10,12 +10,16 @@ display: flex;
 height: auto;
 width: auto;
 justify-content: space-between;
-padding-top: 7px;
+padding-top: 0px;
 background: white;
 position: sticky;
 top: 0;
 
 
+}
+#navrgt> a{
+    text-decoration: none;
+    color: aliceblue;
 }
 #navlft7{
 display: flex;
@@ -52,7 +56,10 @@ background-color: black;
 color: brown;
 border-radius: 50%;
 }
-
+a{
+  text-decoration: none;
+  color: black;
+}
 
 
 
@@ -84,6 +91,16 @@ border-radius: 50%;
           cursor: pointer;
         }
 
+        h3{
+          margin-left: 500px;
+          border: 1px solid rgb(3, 0, 0);
+          color: rgb(220, 241, 218);
+          width: auto;
+          border-radius: 5%;
+          background-color: brown;
+          
+        }
+
 
 </style>
 
@@ -96,14 +113,14 @@ border-radius: 50%;
     <div id="navlft7">
 
     <div class="wrap7">
-        <a href=""><div class="icon7"></div>
+        <a href="closet.html"><div class="icon7"></div>
         <div class="icon7"></div>
         <div class="icon7"></div>
     </div>
 
 
     <img class="logo7"
-    src="file:///C:/Users/pcpoint/Downloads/CLOSET.png">
+    src=" https://i.ibb.co/RgQk5Ys/CLOSET.png">
     </div>
     <div id="navrgt7">
        <h6>SEARCH<br>__________________</h6>
@@ -113,7 +130,7 @@ border-radius: 50%;
     </div>
   </div>
 
-  <h1> </h1>
+  <h3> </h3>
   <div id="main"></div>
 
 </body>
@@ -128,7 +145,7 @@ border-radius: 50%;
  //calculate the total once we add same product multiple time with reduce
    let totalCost=cartItems.reduce((acc,el)=> acc+el.price,0)
    console.log(totalCost)
-   document.querySelector("h1").innerText= "Total.price"+ ":-"+" "+totalCost +"$";
+   document.querySelector("h3").innerText= "Total.price"+ ":-"+" "+totalCost +"$";
 
     //reduce
     //higher order fuction like foreach,map,
